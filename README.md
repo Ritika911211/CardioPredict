@@ -1,157 +1,159 @@
-# Heart Disease Prediction
+# ❤️ Heart Disease Prediction using Machine Learning
 
-- LinkedIn [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan)
-- Medium [KalyanMurapaka274](https://medium.com/@kalyanmurapaka274)
+## 📌 Overview
 
+This project focuses on predicting the possibility of heart disease using Machine Learning techniques.
 
-## About The Project
+The system analyzes medical and demographic attributes such as age, gender, chest pain type, blood pressure, cholesterol, blood sugar, maximum heart rate, exercise-induced angina and other clinical features to predict whether a person is likely to have heart disease.
 
+The project helped me understand the complete Machine Learning workflow — from data preprocessing and exploratory data analysis to model training, evaluation and deployment.
 
-Heart disease prediction is a crucial aspect of preventive healthcare that involves the comprehensive analysis of diverse data points to evaluate an individual's susceptibility to cardiovascular diseases. This process integrates demographic details like age and gender with critical clinical information, including medical and family histories, lifestyle choices, and existing health conditions such as hypertension or diabetes. By examining biomarkers like blood pressure, cholesterol levels, and blood sugar, alongside results from medical tests and imaging studies, predictive models can identify patterns and trends indicative of potential heart issues. Machine learning algorithms play a pivotal role in processing this information, helping stratify individuals into risk categories. The ultimate goal is to enable timely interventions and personalized preventive strategies, empowering individuals to make lifestyle adjustments that can mitigate the risk of heart-related events like heart attacks or strokes. Continuous monitoring and updating of predictive models ensure ongoing accuracy and effectiveness in supporting proactive heart health management.
+---
 
-## About the Dataset
+## 🎯 Objective
 
-This dataset gives information related to heart disease. The dataset contains 13 columns, target is the class variable which is affected by the other 12 columns. Here the aim is to classify the target variable to (disease\non disease) using different machine learning algorithms and find out which algorithm is suitable for this dataset.
-<br><be>
+The main objectives of this project are:
 
-<h3>Attributes:</h3> 
+- Analyze a heart disease dataset
+- Perform data preprocessing and exploratory data analysis
+- Train multiple Machine Learning classification models
+- Compare model performance
+- Select a suitable model for prediction
+- Build a simple web interface for making predictions
 
- - Age 
- - Gender 
- - Chest Pain Type
- - Resting Blood Pressure
- - Serum Cholesterol 
- - Fasting Blood Sugar 
- - Resting Electrocardiographic Results
- - Maximum Heart Rate Achieved
- - Exercise-induced angina
- - Depression induced by exercise relative to rest
- - Slope of the Peak Exercise ST Segment
- - Number of Major Vessels Colored by Fluoroscopy
- - Thalassemia
- - Target 
+---
 
-## Built With
+## 🧠 Machine Learning Workflow
 
- - Pandas
- - Numpy
- - Scikit-Learn
- - Seaborn
- - Matplotlib
- - Flask
- - DVC (Data Version Control)
- - MLFlow
- - Catboost
- - XG Boost
-
-## Getting Started
-
-This will help you understand how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-## Installation Steps
-
-### Option 1: Installation from GitHub
-
-Follow these steps to install and set up the project directly from the GitHub repository:
-
-1. **Clone the Repository**
-   - Open your terminal or command prompt.
-   - Navigate to the directory where you want to install the project.
-   - Run the following command to clone the GitHub repository:
-     ```
-     git clone https://github.com/KalyanMurapaka45/Heart-Disease-Prediction.git
-     ```
-
-2. **Create a Virtual Environment** (Optional but recommended)
-   - It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
-     ```
-     conda create -p <Environment_Name> python==<python version> -y
-     ```
-
-3. **Activate the Virtual Environment** (Optional)
-   - Activate the virtual environment based on your operating system:
-       ```
-       conda activate <Environment_Name>/
-       ```
-
-4. **Install Dependencies**
-   - Navigate to the project directory:
-     ```
-     cd [project_directory]
-     ```
-   - Run the following command to install project dependencies:
-     ```
-     pip install -r requirements.txt
-     ```
-
-5. **Run the Project**
-   - Start the project by running the appropriate command.
-     ```
-     python app.py
-     ```
-
-6. **Access the Project**
-   - Open a web browser or the appropriate client to access the project.
-  
-<br><br>
-### Option 2: Installation from DockerHub
-
-If you prefer to use Docker, you can install and run the project using a Docker container from DockerHub:
-
-1. **Pull the Docker Image**
-   - Open your terminal or command prompt.
-   - Run the following command to pull the Docker image from DockerHub:
-     ```
-     docker pull kalyan45/heart-app
-     ```
-
-2. **Run the Docker Container**
-   - Start the Docker container by running the following command, and mapping any necessary ports:
-     ```
-     docker run -p 5000:5000 kalyan45/heart-app
-     ```
-
-3. **Access the Project**
-   - Open a web browser or the appropriate client to access the project.
-
-## Setup
-
-### MLflow Tracking
-
-We use MLflow to log and track our machine learning experiments. The MLFLOW_TRACKING_URI environment variable is set to the DagsHub repository's MLflow tracking URI.
-
-```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/HemaKalyan45/Heart-Disease-Prediction.mlflow
-
-export MLFLOW_TRACKING_USERNAME=HemaKalyan45
-
-export MLFLOW_TRACKING_PASSWORD=f3c9457eb0ff83244e93ac8ee651b80d4b35f07c
+```text
+Dataset
+   ↓
+Data Preprocessing
+   ↓
+Exploratory Data Analysis
+   ↓
+Feature Engineering
+   ↓
+Model Training
+   ↓
+Model Evaluation
+   ↓
+Best Model Selection
+   ↓
+Prediction
+   ↓
+Flask Web Application
 ```
+---
+## 📊 Dataset
 
-## Contributing
+The dataset contains medical and demographic attributes related to heart disease.
 
-Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Features include:
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+-Age
+-Gender
+-Chest Pain Type
+-Resting Blood Pressure
+-Serum Cholesterol
+-Fasting Blood Sugar
+-Resting ECG Results
+-Maximum Heart Rate Achieved
+-Exercise-Induced Angina
+-ST Depression
+-Slope of Peak Exercise ST Segment
+-Number of Major Vessels
+-Thalassemia
+Target
+The target variable represents whether heart disease is present or not.
+🤖 Models & Technologies
+Machine Learning
+Scikit-learn
+CatBoost
+XGBoost
+Data Analysis
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Deployment
+Flask
+HTML/CSS
+MLOps / Version Control
+MLflow
+DVC
+Git & GitHub
+🔍 Exploratory Data Analysis
+The dataset was analyzed to understand:
+Feature distributions
+Correlations between variables
+Relationships between medical attributes
+Class distribution
+Important factors associated with heart disease
+Visualizations were created using Matplotlib and Seaborn.
+📈 Model Evaluation
+Different classification algorithms can be trained and compared using evaluation metrics such as:
+Accuracy
+Precision
+Recall
+F1-Score
+Confusion Matrix
+The model with suitable performance can then be selected for prediction.
+🌐 Web Application
+A Flask-based interface can be used to provide input values and generate a heart disease prediction.
+Run locally
+git clone https://github.com/Ritika911211/Heart-Disease-Prediction.git
 
-1. Fork the Project
-2. Create your Feature Branch
-3. Commit your Changes
-4. Push to the Branch
-5. Open a Pull Request
+cd Heart-Disease-Prediction
 
-## License
+pip install -r requirements.txt
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-
-## Contact
-
-Hema Kalyan Murapaka - [@kalyanmurapaka274@gmail.com](kalyanmurapaka274@gmail.com)
-
-
-## Acknowledgements
-
-We'd like to extend our gratitude to all individuals and organizations who have played a role in the development and success of this project. Your support, whether through contributions, inspiration, or encouragement, has been invaluable. Thank you for being a part of our journey.
+python app.py
+Then open:
+http://127.0.0.1:5000/
+📁 Project Structure
+Heart-Disease-Prediction/
+│
+├── src/
+│   └── Heart/
+│
+├── Notebook_Experiments/
+│
+├── templates/
+│
+├── static/
+│
+├── Artifacts/
+│
+├── app.py
+├── requirements.txt
+├── setup.py
+├── Dockerfile
+├── dvc.yaml
+├── dvc.lock
+└── README.md
+🚀 Key Learning Outcomes
+Through this project, I explored:
+End-to-end Machine Learning workflows
+Data preprocessing and EDA
+Classification algorithms
+Model evaluation
+Flask-based ML deployment
+Experiment tracking with MLflow
+Dataset/version management with DVC
+Structuring an ML project for reproducibility
+🔮 Future Improvements
+Improve model performance through hyperparameter tuning
+Add more advanced feature engineering
+Add interactive visualizations
+Deploy the application online
+Add model explainability using SHAP
+Improve the user interface
+Integrate automated ML model monitoring
+⚠️ Disclaimer
+This project is intended for educational and demonstration purposes only.
+The prediction generated by this system should not be considered a medical diagnosis. Always consult a qualified healthcare professional for medical advice.
+👩‍💻 Author
+Ritika Gujar
+B.Tech Information Technology Engineering
+GitHub: Ritika911211⁠�
